@@ -11,6 +11,7 @@ Attack → Evidence → Finding → Mitigation → Retest
 # Projects
 
 # | Project| Focus| Key Security Areas| Status
+
 1| AI Red Teaming Lab| Attack and assess an LLM application using automated and manual techniques| Prompt Injection, Jailbreaking, Sensitive Information Disclosure, System Prompt Leakage| In Progress
 2| Secure RAG Security Assessment| Threat-model and attack a retrieval-augmented generation application| Indirect Prompt Injection, Data Leakage, Data Poisoning, Vector & Embedding Weaknesses| Planned
 3| AI Agent Security Lab| Attack and harden a tool-using AI agent| Goal Hijacking, Tool Misuse, Privilege Abuse, Agent Authorization| Planned
@@ -20,6 +21,7 @@ Each project contains its own documentation covering the security scenario, arch
 # Standards and Frameworks
 
 Framework| Purpose
+
 OWASP Top 10 for LLM Applications| Classifying vulnerabilities in LLM applications
 OWASP GenAI Security Project| Security risks in generative and agentic AI
 MITRE ATLAS| Adversary tactics and techniques targeting AI systems
@@ -27,6 +29,7 @@ NIST AI Risk Management Framework| AI security and risk-management guidance
 # Tools
 
 Tool| Purpose
+
 Ollama| Run open-weight LLMs locally in an isolated environment
 Garak| Automated LLM vulnerability scanning and probing
 PyRIT| Adversarial prompt orchestration and AI red teaming
