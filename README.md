@@ -1,20 +1,77 @@
 # ai-security-lab
-AI Security Lab
 
-Hands-on projects focused on identifying, exploiting, and mitigating security weaknesses in modern AI applications. This portfolio is built to demonstrate practical AI security skills through real attack scenarios, security assessments, defensive controls, and retesting.
+Four hands-on projects for building a practical portfolio in AI security — demonstrating the ability to assess, attack, and secure modern AI applications through controlled, repeatable security testing. The focus is on producing evidence of real security work rather than simply listing courses, certifications, or AI security concepts.
 
-The projects focus on AI red teaming, RAG security, AI agent security, and AI supply-chain security, using intentionally vulnerable systems, fictional data, and controlled lab environments.
+Each project follows a practical security workflow:
 
-«Safety note: All projects are performed in isolated environments against systems and applications that I own or have explicit permission to test. Any secrets or sensitive data used in the labs are fictional and created specifically for testing.»
+Attack → Evidence → Finding → Mitigation → Retest
+
+«Safety note: Every project is performed in an isolated lab environment against systems that I own or have explicit permission to test. All data, credentials, secrets, and organizations used in these projects are fictional and created specifically for security testing. Never use these tools or techniques against systems, models, or accounts without authorization.»
 
 Projects
 
-#| Project| Focus| Key Areas| Status
-1| AI Red Teaming Lab| Attack and assess an LLM application| Prompt Injection, Jailbreaking, LLM01, LLM02, LLM07| In Progress
-2| Secure RAG Assessment| Identify security weaknesses in RAG pipelines| Indirect Injection, Data Leakage, Embedding Weaknesses| Planned
-3| AI Agent Security| Test and harden tool-using AI agents| Tool Misuse, Goal Hijacking, Privilege Abuse| Planned
-4| AI Supply Chain Security| Assess models, dependencies, and AI artifacts| Model Poisoning, Pickle Attacks, Dependency Risks| Planned
+#| Project| Focus| Key Security Areas| Status
+1| AI Red Teaming Lab| Attack and assess an LLM application using automated and manual techniques| Prompt Injection, Jailbreaking, Sensitive Information Disclosure, System Prompt Leakage| In Progress
+2| Secure RAG Security Assessment| Threat-model and attack a retrieval-augmented generation application| Indirect Prompt Injection, Data Leakage, Data Poisoning, Vector & Embedding Weaknesses| Planned
+3| AI Agent Security Lab| Attack and harden a tool-using AI agent| Goal Hijacking, Tool Misuse, Privilege Abuse, Agent Authorization| Planned
+4| AI Supply Chain Security Lab| Assess the security of AI models, dependencies, and artifacts| Model Poisoning, Unsafe Deserialization, Dependency Confusion, Model Integrity| Planned
 
-Each project is documented with its architecture, threat model, attack methodology, findings, security controls, and retest results. The goal is to demonstrate the complete security assessment lifecycle:
+Each project contains its own documentation covering the security scenario, architecture, trust boundaries, threat model, attack methodology, findings, mitigations, and retest evidence.
 
-Attack → Evidence → Finding → Mitigation → Retest
+Standards and Frameworks
+
+Framework| Purpose
+OWASP Top 10 for LLM Applications| Classifying vulnerabilities in LLM applications
+OWASP GenAI Security Project| Security risks in generative and agentic AI
+MITRE ATLAS| Adversary tactics and techniques targeting AI systems
+NIST AI Risk Management Framework| AI security and risk-management guidance
+
+Tools
+
+Tool| Purpose
+Ollama| Run open-weight LLMs locally in an isolated environment
+Garak| Automated LLM vulnerability scanning and probing
+PyRIT| Adversarial prompt orchestration and AI red teaming
+Promptfoo| LLM security testing and evaluation
+LangChain| Building and testing RAG/agent applications
+LlamaIndex| RAG and retrieval pipeline development
+Chroma| Local vector database for RAG security testing
+Fickling| Static analysis of potentially malicious Python pickle files
+ModelScan| Security scanning of machine-learning model artifacts
+
+How Each Project Is Documented
+
+Business scenario — The fictional organization and purpose of the AI system.
+
+Architecture — Components, data flows, trust boundaries, and security controls.
+
+Threat model — Assets, attack surfaces, trust boundaries, threats, and assumptions.
+
+Attack methodology — The techniques, tools, test cases, and conditions used during assessment.
+
+Findings — Vulnerability description, evidence, impact, severity, and affected component.
+
+Framework mapping — Relevant OWASP LLM and MITRE ATLAS classifications.
+
+Mitigation — Security control implemented to address the finding.
+
+Retest — The same attack is repeated to verify whether the mitigation actually works.
+
+Portfolio Deliverables
+
+Each completed project aims to include:
+
+- Source code
+- Architecture diagram
+- Threat model
+- Attack scripts / test cases
+- Tool outputs and evidence
+- Security findings
+- OWASP / MITRE mapping
+- Mitigation implementation
+- Retest results
+- Screenshots or demonstration
+- Technical report
+- Concise project README
+
+The goal is not to build as many projects as possible, but to build a small number of projects deeply enough to demonstrate practical AI security assessment skills.
