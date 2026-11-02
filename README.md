@@ -1,4 +1,4 @@
-# ai-security-lab
+# Ai-Projects-Lab
 
 Four hands-on projects for building a practical portfolio in AI security — demonstrating the ability to assess, attack, and secure modern AI applications through controlled, repeatable security testing. The focus is on producing evidence of real security work rather than simply listing courses, certifications, or AI security concepts.
 
